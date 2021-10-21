@@ -1,14 +1,14 @@
 package com.jmk.elevator.workers;
 
-import com.jmk.elevator.operator.ElevatorOperator;
+import com.jmk.elevator.operator.ElevatorController;
 import com.jmk.elevator.request.Request;
 
 public class AddJobWorker implements Runnable {
-	private ElevatorOperator elevator;
+	private ElevatorController elevatorController;
 	private Request request;
 
-	public AddJobWorker(ElevatorOperator elevator, Request request) {
-		this.elevator = elevator;
+	public AddJobWorker(ElevatorController elevator, Request request) {
+		this.elevatorController = elevatorController;
 		this.request = request;
 	}
 
@@ -21,6 +21,6 @@ public class AddJobWorker implements Runnable {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		elevator.addJob(request);
+		elevatorController.addJob(request);
 	}
 }

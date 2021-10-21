@@ -6,7 +6,7 @@ import com.jmk.elevator.enums.Direction;
 import com.jmk.elevator.enums.State;
 import com.jmk.elevator.request.Request;
 
-public class ElevatorOperator {
+public class ElevatorController {
 
 	private Direction currentDirection = Direction.UP;
 	private State currentState = State.IDLE;

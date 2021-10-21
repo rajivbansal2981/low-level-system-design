@@ -1,12 +1,12 @@
 package com.jmk.elevator.workers;
 
-import com.jmk.elevator.operator.ElevatorOperator;
+import com.jmk.elevator.operator.ElevatorController;
 
 public class ProcessJobWorker implements Runnable{
-	private ElevatorOperator elevator;
+	private ElevatorController elevatorController;
 
-	public ProcessJobWorker(ElevatorOperator elevator) {
-		this.elevator = elevator;
+	public ProcessJobWorker(ElevatorController elevatorController) {
+		this.elevatorController = elevatorController;
 	}
 
 	@Override
@@ -14,7 +14,7 @@ public class ProcessJobWorker implements Runnable{
 		/**
 		 * start the elevator
 		 */
-		elevator.startElevator();
+		elevatorController.startElevator();
 	}
 
 }

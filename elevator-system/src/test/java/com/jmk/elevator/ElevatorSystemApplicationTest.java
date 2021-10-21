@@ -22,7 +22,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import com.jmk.elevator.enums.Direction;
-import com.jmk.elevator.operator.ElevatorOperator;
+import com.jmk.elevator.operator.ElevatorController;
 import com.jmk.elevator.request.ExternalRequest;
 import com.jmk.elevator.request.InternalRequest;
 import com.jmk.elevator.request.Request;
@@ -35,7 +35,7 @@ public class ElevatorSystemApplicationTest {
 
 	@Test
 	public void testElevatorOpertor() {
-		ElevatorOperator elevator = new ElevatorOperator();
+		ElevatorController elevator = new ElevatorController();
 
 		/**
 		 * Thread for starting the elevator
