@@ -8,11 +8,11 @@ import lombok.Setter;
 @Getter
 @Setter
 public class Ticket {
-    String ticketNumber;
-    long startTime;
-    long endTime;
-    Vehicle vehicle;
-    ParkingSlot parkingSlot;
+    private String ticketNumber;
+    private long startTime;
+    private long endTime;
+    private Vehicle vehicle;
+    private ParkingSlot parkingSlot;
 
     public static Ticket createTicket(Vehicle vehicle,ParkingSlot parkingSlot){
         return Ticket.builder()
